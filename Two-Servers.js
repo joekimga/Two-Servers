@@ -2,7 +2,8 @@
 var http = require("http");
 
 // Define a port to listen for incoming requests
-var PORT = 7000;
+var PORTone = 7000;
+var PORTtwo = 7500;
 
 // Create a generic function to handle requests and responses
 function handleRequest(request, response) {
@@ -13,7 +14,8 @@ function handleRequest(request, response) {
 
 // Use the Node HTTP package to create our server.
 // Pass the handleRequest function to empower it with functionality.
-var server = http.createServer(handleRequest);
+var serverOne = http.createServer(handleRequest);
+var serverTwo = http.createServer(handleRequest);
 
 var PORT = 7500;
 // Start our server so that it can begin listening to client requests.
